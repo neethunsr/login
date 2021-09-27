@@ -2,7 +2,7 @@ import React from "react";
 import Form from "./Form";
 
 var isLoggedIn = false;
-var isRegistered = true;
+var isRegistered = false;
 
 const currentTime = new Date().getHours();
 console.log(currentTime);
