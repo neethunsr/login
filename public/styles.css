@@ -47,10 +47,10 @@ form input {
 form button {
 	appearance: none;
 	outline: 0;
-	background-color: #ccadb5;
+	background-color: black;
 	border: 0;
 	padding: 10px 15px;
-	color: black;
+	color: #e5625e;
 	border-radius: 3px;
 	width: 250px;
 	font-size: 18px;
