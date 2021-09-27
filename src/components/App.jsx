@@ -1,7 +1,8 @@
 import React from "react";
-import Login from "./Login";
+import Form from "./Form";
 
 var isLoggedIn = false;
+var isRegistered = true;
 
 const currentTime = new Date().getHours();
 console.log(currentTime);
@@ -11,11 +12,11 @@ function App() {
     <div className="container">
 
       {/*Ternary Operator*/}
-      {isLoggedIn ? <h1>Hello</h1> : <Login />}
+      {isLoggedIn ? <h1>Hello</h1> : <Form isRegistered={isRegistered}/>}
 
       {/*AND Operator*/}
       {currentTime > 12 && <h1>Why are you still working?</h1>}
-      
+
     </div>
   );
 }
