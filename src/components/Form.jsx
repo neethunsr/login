@@ -2,12 +2,18 @@ import React from "react";
 import Input from "./Input";
 
 function Form(props) {
+  const [color, setcolor] = useState(false);
+
   return (
     <form className="form">
       <Input type="text" placeholder="Username" />
       <Input type="password" placeholder="Password" />
       {!props.isRegistered && <Input type="password" placeholder="Confirm Password" />}
-      <button type="submit">
+      <button 
+        style={{ backgroundColor: setcolor ? "black" : "white" }} 
+        onMouseOver={() => setcolor(true)}
+        onMouseOut={() => setcolor(false)} 
+        type="submit">
         {props.isRegistered ? "Login" : "Register"}
       </button>
     </form>
