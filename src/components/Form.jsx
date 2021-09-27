@@ -10,7 +10,7 @@ function Form(props) {
       <Input type="password" placeholder="Password" />
       {!props.isRegistered && <Input type="password" placeholder="Confirm Password" />}
       <button 
-        style={{ backgroundColor: color ? "white" : "black" }} 
+        style={{ backgroundColor: color ? "black" : "white" }} 
         onMouseOver={() => setcolor(true)}
         onMouseOut={() => setcolor(false)} 
         type="submit">
